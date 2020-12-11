@@ -9,7 +9,7 @@ https://www.hackerrank.com/challenges/climbing-the-leaderboard
 
 
 def climb_board(grid_string):
-    sysinfromstring = StdInFromString(grid_string)
+    stdinfromstring = StdInFromString(grid_string)
     n = int(input().strip())
 
     # an "array map" of scores and ranks -- two arrays with corresponding indexes.  We want the scores array in
@@ -35,7 +35,7 @@ def climb_board(grid_string):
 
     m = int(input().strip())
     alice = [int(alice_temp) for alice_temp in input().strip().split(' ')]
-    sysinfromstring.close()
+    stdinfromstring.close()
 
     for ascore in alice:
         pos = bisect_left(scores, ascore)
